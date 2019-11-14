@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+/*base*/
+body{
+  font-size:1.4rem;
+  font-family:Raleway,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+  background: url('../images/bg-img.jpg') no-repeat fixed bottom;
+  background-size:100% auto;
+  margin:0;
+}
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+
+
+/*header*/
+.heading{
+  padding: 250px 30px 250px;
+  background-color:#fff;
+  color:#151515;
+  text-align: center;
+}
+
+.site-heading{
+  margin:0 0 30px;
+  letter-spacing: 1px;
+  font-size:2.2rem;
+}
+
+
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+.site-title{
+  margin:0 auto;
+  width:20ch;
+  overflow: hidden;
+  font-size: 3rem;
+  white-space: nowrap;
+  animation: typing 1s steps(10, end)
+}
+
+.site-title-sub{
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size:1.3rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after{
+  content:"";
+  display: inline-block;
+  width: 140px;
+  height:2px;
+  margin: 0 30px;
+  background-color: #000000;
+  vertical-align: middle;
+}
+
+/*nav*/
+
+.page-header{
+  background-color:#fff;
+  padding:4% 0;
+}
+
+.inner{
+  text-align:right;
+}
+
+.primary-nav{
+  display:inline-block;
+  width:100%;
+  background-color:#fff;
+  z-index:100;
+}
+
+.nav-list{
+  margin-right:10%;
+}
+
+.nav-list li{
+  display:inline-block;
+}
+
+.nav-item{
+  margin:0 15px;
+  font-size:0.9rem;
+  color:#222222;
+}
+
+
+.clone-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color:#000000;
+  transition: .3s;
+  transform: translateY(-100%);
+  text-align:right;
+  margin-right:10%;
+  opacity:0.5;
+}
+.clone-nav li{
+  background-color:#000000;
+}
+
+.clone-nav .nav-item{
+  color:#fff;
+}
+
+.is-show {
+  transform: translateY(0);
+}
+
+/*about me*/
+
+.about-me{
+  background-color: #000000;
+  position:relative;
+}
+
+.section-title{
+  position:relative;
+  top:-45px;
+  text-align:center;
+  color: #696969;
+  font-size: 3.8rem;
+  font-family:Raleway,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.background-text{
+  color:#a9a9a9;
+  opacity:0.1;
+  font-size:5.0rem;
+  font-weight: bold;
+  font-family:Raleway,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.bg-text-about{
+  position: absolute;
+  top: 45%;
+  left: 3%;
+}
+
+.name-wrapper{
+  background-color:#111111;
+  width:55%;
+  margin-top:5%;
+  }
+  
+.name-area{
+  padding: 5%;
+}  
+
+.name{
+  color: #fff;
+  margin-left:40%;
+  letter-spacing: 1px;
+}
+  
+.name-english{
+  font-size: 2.0rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Serif', serif;
+  letter-spacing:5px;
+}
+
+.name-japanese{
+  margin-top:1%;
+  font-size:0.9rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+  
+.caption{
+  color: #fff;
+  position:absolute;
+  top: 25%;
+  left: 53%;
+  font-size:1.0rem;
+  letter-spacing: 1px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing:5px;
+  line-height:2;
+}
+  
+.profile-wrapper{
+  margin-top:2%;
+}
+  
+.profile-title{
+  color:#fff;
+  margin-left:10%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+  
+.profile{
+  color: #fff;
+  font-size: 0.9rem;
+  margin-left: 10%;
+  letter-spacing: 2px;
+  line-height:2;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.about-me-img{
+  position:absolute;
+  top:44%;
+  right:12%;
+  width:350px;
+  height:350px;
+  border:2px solid #696969;
+}
+
+.link-area{
+  margin-left: 10%;
+  padding-bottom: 6%;
+  font-size:1.0rem;
+}
+
+.link-area-title{
+  font-size: 1.2rem;
+  color:#fff;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.link-content{
+  color:#fff;
+  line-height: 2;
+}
+
+.link-icon{
+  margin-left:5px;
+  margin-right:4%;
+}
+
+.link-icon-git{
+  margin-right:3.7%;
+}
+
+/*skill*/
+.skill{
+  background-color:#fff;
+  position:relative;
+  padding-bottom:5%;
+}
+
+.bg-text-skill{
+  position:absolute;
+  top:40%;
+  right:3%;
+  z-index:0;
+}
+
+.skill-list{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:6%;
+}
+
+.skill-list li{
+  width: 25%;
+  margin:30px;
+  z-index:1;
+}
+
+.skill-wrapper{
+margin: 5%;
+position:relative;
+}
+
+.skill-item{
+  text-align:center;
+  width:20%;
+  background-color:#f5f5f5;
+  position:relative;
+  box-shadow: 0 0 3px gray;
+}
+
+.skill-item:hover{
+  transform: translateY(-4px);
+}
+
+.skill-item p{
+  color:#000000;
+}
+
+.skill-icon{
+  width:40px;
+  height:auto;
+  position:absolute;
+  top:-10%;
+  left:45%;
+}
+
+.skill-inner{
+  padding:10%;
+}
+
+.skill-title{
+  text-align:center;
+  color:#696969;
+  margin-top:5%;
+  font-weight:bold;
+  font-size:1.2rem;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.skill-text{
+  padding:30px 10px;
+  color:#444444;
+  font-size:0.9rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*portfolio*/
+.portfolio{
+  background-color:#000000;
+  position:relative;
+  padding-bottom:5%;
+}
+
+.bg-text-portfolio{
+ position: absolute;
+ top: 15%;
+ left: 3%;
+ z-index: 0;
+}
+ 
+
+.portfolio-wrapper{
+  display:table;
+  width:100%;
+  margin: 5% 0;
+  padding:5% 0;
+
+  table-layout: fixed;
+  
+}
+
+.portfolio-box{
+  position:relative;
+  display:table-cell;
+}
+
+.portfolio-box::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:0;
+  width:100%;
+  height:50%;
+  background: no-repeat;
+  background-size:100% 100%;
+  opacity:0.2;
+  transform: scaleY(-1);
+  background-image: url(../images/bg.jpg)
+}
+
+
+.portfolio-box:nth-child(odd) .portfolio-image{
+  margin:47% 0 0;
+}
+
+
+.portfolio-image{
+  display:block;
+  width:100%;
+  margin:0 0 47%;
+  position:relative;
+}
+
+.mask {
+	width:			100%;
+	height:			50%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	background-color:#fff;
+	transition:		all 0.4s ease;
+	transform:		scale(0);
+}
+
+
+.img-mask:hover .mask {
+	transform:		scale(1);
+}
+
+
+.portfolio-description{
+  position: absolute;
+  top:50%;
+  left:0px;
+  z-index: 1;
+  width:100%;
+  height:50%;
+  color:#fff;
+}
+
+.portfolio-box:nth-child(odd) .portfolio-description,
+.portfolio-box:nth-child(odd)::after{
+top:0;
+}
+
+.portfolio-description-inner{
+  display:table;
+  width:100%;
+  height:100%;
+  text-align:center;
+  margin-top:10%;
+}
+
+.portfolio-text{
+  display:table-cell;
+  font-size:0.9rem;
+  line-height: 2;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+/*contact*/
+.contact{
+  position:relative;
+  padding-bottom:5%;
+}
+
+.bg-text-contact{
+  position:absolute;
+  top:40%;
+  right:3%;
+}
+
+
+.send-email-btn{
+ margin-top:8%;
+ margin-left:42%;
+ margin-bottom:8%;
+ padding:1% 6%;
+ color:#fff;
+ background-color:#00FF00;
+ opacity:0.5;
+ border-radius:10px;
+ font-size:1.2rem;
+}
+
+.send-email-btn:hover{
+  opacity:0.8;
+}
+
+/*footer*/
+footer{
+  background-color:#000000;
+  color:#fff;
+  text-align:center;
+  padding:3% 0 2%;
+}
+
+.footer-icon{
+  color:#fff;
+  font-size:2.0rem;
+  margin-top:15px 10px 0;
+  width:40px;
+  height:40px;
+  border: 2px solid #fff;
+  border-radius:10px;
+  padding-top:5px;
+}
+
+.footer-icon-twitter{
+  background-color:#00acee;
+  border: 2px solid #00acee; 
+}
+
+.copy-right{
+  margin-top: 4%;
+  font-size:0.8rem;
+}

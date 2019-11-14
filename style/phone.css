@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/*base*/
+body{
+  font-size:1.4rem;
+  font-family:Raleway,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+/*header*/
+.heading{
+  padding: 250px 30px 250px;
+  background-color:#fff;
+  color:#151515;
+  text-align: center;
+}
+
+.site-heading{
+  margin:0 0 30px;
+  letter-spacing: 1px;
+  font-size:2.2rem;
+}
+
+.site-title{
+  font-size:2.0rem;
+}
+
+.site-title-sub{
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size:1.3rem;
+}
+
+/*nav*/
+
+.page-header{
+  display: none;
+}
+
+.clone-nav {
+  display: none;
+}
+
+
+/*about me*/
+
+.about-me{
+  background-color: #000000;
+  position:relative;
+}
+
+.section-title{
+  position:relative;
+  top:-25px;
+  text-align:center;
+  color: #696969;
+  font-size: 2.0rem;
+  font-family:Raleway,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.background-text{
+  display:none;
+}
+
+
+.name-wrapper{
+  background-color:#111111;
+  width:100%;
+  margin-top:5%;
+ }
+  
+.name-area{
+  padding: 5%;
+}  
+.name{
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+  
+.name-english{
+  font-size: 2.0rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Serif', serif;
+  letter-spacing:5px;
+}
+  
+  
+.name-japanese{
+  display:none;
+ }
+  
+.caption{
+ display:none;
+}
+  
+.profile-wrapper{
+  margin-top:2%;
+  text-align:center;
+}
+  
+ 
+.profile-title{
+  color:#fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+  
+.profile{
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  line-height:2;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+    
+}
+
+.about-me-img{
+display:none;
+}
+
+.link-area{
+  padding-bottom: 6%;
+  font-size:1.0rem;
+  text-align:center;
+}
+
+.link-area-title{
+  font-size: 1.2rem;
+  color:#fff;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.link-area .link-content{
+  color:#fff;
+  line-height: 2;
+  text-align:center;
+}
+
+.link-content,.link-content a{
+ display:block;
+}
+
+
+.link-icon{
+  margin-left:5px;
+  margin-right:4%;
+}
+
+.link-icon-git{
+  margin-right:3.7%;
+}
+
+/*skill*/
+.skill{
+  background-color:#fff;
+  position:relative;
+  padding-bottom:5%;
+}
+
+
+.skill-list{
+  display:flex;
+  flex-wrap:wrap;
+  margin:5% 5% 5% -3%;
+}
+
+.skill-list li{
+  width: 100%;
+  margin:30px;
+  z-index:1;
+}
+
+.skill-wrapper{
+margin: 5%;
+position:relative;
+}
+
+.skill-item{
+  text-align:center;
+  display:block;
+  width:100%;
+  background-color:#f5f5f5;
+  position:relative;
+  box-shadow: 0 0 3px gray;
+}
+
+
+.skill-item p{
+  color:#000000;
+}
+
+.skill-icon{
+  width:40px;
+  height:auto;
+  position:absolute;
+  top:-10%;
+  left:43%;
+}
+
+.skill-inner{
+  padding:10%;
+}
+
+.skill-title{
+  text-align:center;
+  color:#696969;
+  margin-top:5%;
+  font-weight:bold;
+  font-size:1.2rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.skill-text{
+  padding:30px 10px;
+  color:#444444;
+  font-size:0.9rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*portfolio*/
+.portfolio{
+  background-color:#000000;
+  position:relative;
+  padding-bottom:5%;
+}
+
+ 
+
+.portfolio-wrapper{
+  display:table;
+  width:100%;
+  margin: 5% 0;
+  padding:5% 0;
+
+  table-layout: fixed;
+  
+}
+
+.portfolio-box{
+  position:relative;
+}
+
+
+.portfolio-image{
+  display:block;
+  width:100%;
+  position:relative;
+}
+
+
+.img-mask:hover .mask {
+	transform:		scale(1);
+}
+
+
+.portfolio-description{
+  position: absolute;
+  top:0%;
+  z-index: 1;
+  width:100%;
+  height:50%;
+  color:#fff;
+}
+
+
+.portfolio-description-inner{
+  width:100%;
+  height:100%;
+  text-align:center;
+  margin-top:10%;
+}
+
+.portfolio-text{
+  font-size:0.9rem;
+  line-height: 2;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+/*contact*/
+.contact{
+  position:relative;
+  padding-bottom:8%;
+}
+
+
+
+.send-email-btn{
+ text-align:center;
+ margin-left:33%;
+ padding:1% 6%;
+ color:#fff;
+ background-color:#00FF00;
+ opacity:0.5;
+ border-radius:10px;
+ font-size:1.2rem;
+}
+
+.send-email-btn:hover{
+  opacity:0.8;
+}
+
+/*footer*/
+footer{
+  background-color:#000000;
+  color:#fff;
+  text-align:center;
+  padding:3% 0 2%;
+}
+
+.footer-icon{
+  color:#fff;
+  font-size:1.5rem;
+  margin-top:15px 10px 0;
+  width:33px;
+  height:30px;
+  border: 2px solid #fff;
+  border-radius:10px;
+  padding-top:5px;
+}
+
+.footer-icon-twitter{
+  background-color:#00acee;
+  border: 2px solid #00acee; 
+}
+
+.copy-right{
+  margin-top: 4%;
+  font-size:0.8rem;
+}
+
